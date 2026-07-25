@@ -19,27 +19,27 @@
     };
   };
 
-   trackball_listener: trackball_listener {
+  trackball_listener: trackball_listener {
     compatible = "zmk,input-listener";
     status = "disabled";
     device = <&trackball_split>;
 
     snipe {
       layers = <NUM>;
-      /* Заменили макрос на число 3 (270 градусов) */
-      input-processors = <&zip_xy_transform 3>, <&zip_xy_scaler 1 3>;
+      /* Поворот на 270° + инверсия Y для снайперского режима */
+      input-processors = <&zip_xy_transform 7>, <&zip_xy_scaler 1 3>;
     };
 
     scroll {
       layers = <FN>;
-      /* Используем число 3 для поворота, а инверсию Y оставляем как была */
-      input-processors = <&zip_xy_transform (3 | INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>;
+      /* Поворот на 270° + инверсия Y для режима скролла */
+      input-processors = <&zip_xy_transform 7>, <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>;
     };
 
     move {
       layers = <DEF MOUSE>;
-      /* Заменили макрос на число 3 (270 градусов) */
-      input-processors = <&zip_xy_transform 3>, <&auto_mouse_layer MOUSE 1000>;
+      /* Поворот на 270° + инверсия Y для обычного движения курсора */
+      input-processors = <&zip_xy_transform 7>, <&auto_mouse_layer MOUSE 1000>;
     };
   };
 
