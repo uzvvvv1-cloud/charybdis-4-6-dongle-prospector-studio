@@ -39,7 +39,7 @@
     move {
       layers = <DEF MOUSE>;
       /* Поворот на 270° + инверсия Y для обычного движения курсора */
-      input-processors = <&zip_xy_transform 7>, <&auto_mouse_layer MOUSE 1000>;
+      input-processors = <&zip_xy_transform 7>, <&auto_mouse_layer MOUSE 250>;
     };
   };
 
