@@ -168,7 +168,7 @@
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────────┤
                &kp TAB       &kp A          &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L       &kp SEMI      &kp APOS
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────────┤
-              &kp LSHFT      &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M      &kp COMMA      &kp DOT       &kp FSLH      &kp DEL
+              &kp LCTRL      &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M      &kp COMMA      &kp DOT       &kp FSLH      &kp DEL
         // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────────╯
                         &kp LEFT_ALT       &kp RET     &kp LEFT_GUI   &kp LSHFT    &kp SPACE      &kp RSHFT     &mo 2       &kp BSPC
         //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
@@ -183,7 +183,7 @@
         &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans 
         &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans
         &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans
-                &mkp MB1  &trans   &trans    &mkp MB2  &trans          &trans &trans &trans                  
+                  &mkp MB1  &trans   &trans    &mkp MB2  &trans        &trans &trans &trans                  
       >;
     };
 
@@ -192,13 +192,13 @@
       display-name = "Symbol";
       bindings = <
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &trans         &trans       &trans         &trans      &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
+             &trans     &kp LG(LS(3)) &kp LG(LS(5)) &kp LG(LS(S))   &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans         &trans       &kp UP         &trans       &trans         &trans           &kp N7       &kp N8         &kp N9        &kp N0        &kp HOME      &kp F1
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans       &kp LEFT       &kp DOWN     &kp RIGHT      &trans         &trans           &kp N4       &kp N5         &kp N6        &none         &trans        &kp F10
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &kp LEFT_ALT    &trans        &trans         &trans      &kp MINUS      &kp PLUS          &kp N1       &kp N2         &kp N3        &kp DOT       &trans        &kp F20
+          &kp LC(SPACE)    &trans        &trans         &trans      &kp MINUS      &kp PLUS          &kp N1       &kp N2         &kp N3        &kp DOT       &trans        &kp F20
       // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                            &trans        &trans         &trans        &trans       &trans            &trans        &trans        &trans
       //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯

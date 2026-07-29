@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
-  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ']', '#', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
+  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ']', '#', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL, Z, X,
     C, V, B, N, M, ',', ., /, DEL, LEFT ALT, RET, LEFT GUI, LSHFT, SPACE, RSHFT, Symbol, BSPC]
   Mouse:
   - {t: ▽, type: trans}
@@ -61,9 +61,9 @@ layers:
   - {t: ▽, type: trans}
   Symbol:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+Sft+ 3
+  - Gui+Sft+ 5
+  - Gui+Sft+ S
   - '&sys_reset'
   - BOOT LDR
   - {t: ▽, type: trans}
@@ -96,7 +96,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - F10
-  - LEFT ALT
+  - Ctl+ SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
