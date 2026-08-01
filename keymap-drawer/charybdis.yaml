@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
-  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
-    C, V, B, N, M, ',', ., /, ']', Mouse, RET, LEFT GUI, LCTRL, SPACE, LEFT ALT, Symbol, BSPC]
+  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ']', '#', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL, Z, X,
+    C, V, B, N, M, ',', ., /, DEL, Function, RET, LEFT GUI, LSHFT, SPACE, LEFT ALT, Symbol, BSPC]
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -28,10 +28,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LGUI
-  - LALT
-  - LSHFT
-  - LCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -51,10 +51,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - '&mkp MB1'
   - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -74,8 +74,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP
   - {t: ▽, type: trans}
+  - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
@@ -85,10 +85,10 @@ layers:
   - HOME
   - F1
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - LEFT
   - DOWN
   - RIGHT
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '4'
   - '5'
@@ -96,7 +96,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - F10
-  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,11 +108,11 @@ layers:
   - .
   - {t: ▽, type: trans}
   - F20
+  - LEFT ALT
   - {t: ▽, type: trans}
+  - Sft+ 6
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+ SPACE
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -165,7 +165,7 @@ layers:
   - '}'
   - '|'
   - '~'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,8 +201,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: Function, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -222,7 +222,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: Base, h: toggle}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
